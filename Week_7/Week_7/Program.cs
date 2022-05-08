@@ -10,16 +10,17 @@ namespace Week_7
         {
             #region 1. S difference
 
-            //Console.WriteLine("Enter Diameter size");
+            Console.WriteLine("Enter Diameter size");
 
-            //int x1 = Convert.ToInt32(Console.ReadLine());
-            //int s1 = x1 * x1;
+            int x1 = Convert.ToInt32(Console.ReadLine())*2;
+            int s1 = x1 * x1;
 
-            //double x2 = Math.Sqrt(s1 / 2); // 2a kvadrati = hipotenuzis kvadrats (pitagoras teorema)
-            //double s2 = x2 * x2;
+            var x2 = x1 * Math.Sqrt(2)/2; // 2a kvadrati = hipotenuzis kvadrats (pitagoras teorema)
+
+            var s2 = Math.Round(x2 * x2);
 
 
-            //Console.WriteLine(s1-s2);
+            Console.WriteLine(s1 - s2);
             #endregion
 
             #region 2. Jackpot
