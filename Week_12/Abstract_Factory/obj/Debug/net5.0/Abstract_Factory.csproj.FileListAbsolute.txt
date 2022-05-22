@@ -1,0 +1,16 @@
+C:\Users\user\source\repos\Week_12\Abstract_Factory\bin\Debug\net5.0\Abstract_Factory.exe
+C:\Users\user\source\repos\Week_12\Abstract_Factory\bin\Debug\net5.0\Abstract_Factory.deps.json
+C:\Users\user\source\repos\Week_12\Abstract_Factory\bin\Debug\net5.0\Abstract_Factory.runtimeconfig.json
+C:\Users\user\source\repos\Week_12\Abstract_Factory\bin\Debug\net5.0\Abstract_Factory.runtimeconfig.dev.json
+C:\Users\user\source\repos\Week_12\Abstract_Factory\bin\Debug\net5.0\Abstract_Factory.dll
+C:\Users\user\source\repos\Week_12\Abstract_Factory\bin\Debug\net5.0\Abstract_Factory.pdb
+C:\Users\user\source\repos\Week_12\Abstract_Factory\obj\Debug\net5.0\Abstract_Factory.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\Week_12\Abstract_Factory\obj\Debug\net5.0\Abstract_Factory.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\Week_12\Abstract_Factory\obj\Debug\net5.0\Abstract_Factory.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\Week_12\Abstract_Factory\obj\Debug\net5.0\Abstract_Factory.AssemblyInfo.cs
+C:\Users\user\source\repos\Week_12\Abstract_Factory\obj\Debug\net5.0\Abstract_Factory.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\Week_12\Abstract_Factory\obj\Debug\net5.0\Abstract_Factory.dll
+C:\Users\user\source\repos\Week_12\Abstract_Factory\obj\Debug\net5.0\refint\Abstract_Factory.dll
+C:\Users\user\source\repos\Week_12\Abstract_Factory\obj\Debug\net5.0\Abstract_Factory.pdb
+C:\Users\user\source\repos\Week_12\Abstract_Factory\obj\Debug\net5.0\Abstract_Factory.genruntimeconfig.cache
+C:\Users\user\source\repos\Week_12\Abstract_Factory\obj\Debug\net5.0\ref\Abstract_Factory.dll
