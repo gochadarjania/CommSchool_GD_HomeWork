@@ -1,0 +1,16 @@
+C:\Users\user\source\repos\Week_11\Week_11\bin\Debug\net5.0\Week_11.exe
+C:\Users\user\source\repos\Week_11\Week_11\bin\Debug\net5.0\Week_11.deps.json
+C:\Users\user\source\repos\Week_11\Week_11\bin\Debug\net5.0\Week_11.runtimeconfig.json
+C:\Users\user\source\repos\Week_11\Week_11\bin\Debug\net5.0\Week_11.runtimeconfig.dev.json
+C:\Users\user\source\repos\Week_11\Week_11\bin\Debug\net5.0\Week_11.dll
+C:\Users\user\source\repos\Week_11\Week_11\bin\Debug\net5.0\ref\Week_11.dll
+C:\Users\user\source\repos\Week_11\Week_11\bin\Debug\net5.0\Week_11.pdb
+C:\Users\user\source\repos\Week_11\Week_11\obj\Debug\net5.0\Week_11.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\Week_11\Week_11\obj\Debug\net5.0\Week_11.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\Week_11\Week_11\obj\Debug\net5.0\Week_11.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\Week_11\Week_11\obj\Debug\net5.0\Week_11.AssemblyInfo.cs
+C:\Users\user\source\repos\Week_11\Week_11\obj\Debug\net5.0\Week_11.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\Week_11\Week_11\obj\Debug\net5.0\Week_11.dll
+C:\Users\user\source\repos\Week_11\Week_11\obj\Debug\net5.0\ref\Week_11.dll
+C:\Users\user\source\repos\Week_11\Week_11\obj\Debug\net5.0\Week_11.pdb
+C:\Users\user\source\repos\Week_11\Week_11\obj\Debug\net5.0\Week_11.genruntimeconfig.cache
