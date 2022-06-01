@@ -3,26 +3,34 @@
     ViewData["Title"] = "Booking Page";
 }
 <div class="col-md-8">
-    <form method="POST" class="row g-3 needs-validation" novalidate>
+    <form asp-action="InsertUser" class="row g-3 needs-validation" novalidate>
         <div class="col-md-4">
-            <label for="FirstName" class="form-label">First name</label>
-            <input type="text" class="form-control" id="FirstName" placeholder="Enter Your Name" required>
+            <label asp-for="FirstName" class="form-label">First name</label>
+            <input asp-for="FirstName" type="text" class="form-control" placeholder="Enter Your Name" required>
         </div>
         <div class="col-md-4">
-            <label for="LastName" class="form-label">Last name</label>
-            <input type="text" class="form-control" id="LastName" placeholder="Enter Your Last Name" required>
+            <label asp-for="LastName" class="form-label">Last name</label>
+            <input asp-for="LastName" type="text" class="form-control" placeholder="Enter Your Last Name" required>
         </div>
-        <div class="col-md-5">
-            <label for="Doctor" class="form-label">Doctor</label>
-            <input type="text" class="form-control" id="Doctor" placeholder="Enter Doctor Name" required>
+        <div class="col-md-4">
+            <label asp-for="Doctor" class="form-label">Doctor</label>
+            <input asp-for="Doctor" type="text" class="form-control" placeholder="Enter Doctor Name" required>
         </div>
-        <div class="col-md-3">
-            <label for="DateTime" class="form-label">Time</label>
-            <input type="text" class="form-control" id="DateTime" placeholder="Visit Time" required>
+        <div class="col-md-4">
+            <label asp-for="Time" class="form-label">Time</label>
+            <input asp-for="Time" type="datetime-local" class="form-control" placeholder="Visit Time" required>
         </div>
         <div class="col-12">
             <button class="btn btn-primary" type="submit">Booking</button>
         </div>
-    </form>
 
+    </form>
 </div>
+<br />
+<br />
+<br />
+
+    <form asp-action="GetUsers" method="get" >
+
+    <button type="submit" class="btn btn-info">All Booked Visits</button>
+    </form>

@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -8,6 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Week_13.MiddleWare;
 using Week_13.Services;
 
 namespace Week_13
@@ -31,6 +33,15 @@ namespace Week_13
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            //app.Use(async (context, next) =>
+            //{
+            //    await context.Response.WriteAsync("Hello World zsadasd MiddleWare");
+            //    await next();
+            //});
+            //app.Run(async (context) =>
+            //{
+                
+            //});
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -45,6 +56,8 @@ namespace Week_13
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            app.UseMiddleware<MyFirstMiddleWare>();
 
             app.UseAuthorization();
 

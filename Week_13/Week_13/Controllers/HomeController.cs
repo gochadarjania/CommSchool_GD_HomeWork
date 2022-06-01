@@ -25,23 +25,30 @@ namespace Week_13.Controllers
         }
 
         [HttpPost]
-        public void InsertUser(string firstName, string lastName, string doctor, string inputTime)
+        public IActionResult InsertUser(UserViewModel userViewModel)
         {
-            var time = TimeSpan.Parse(inputTime);
+            var result = _context.ValidationTime(userViewModel);
 
-            UserViewModel userViewModel = new UserViewModel()
+            if (result != null)
             {
-                FirstName = firstName,
-                LastName = lastName,
-                Doctor = doctor,
-                Time = DateTime.Today.Add(time)
-            };
+                return Json(result);
+            }
 
             _context.AddUser(userViewModel);
+
+
+            return Json("Your visit is booked!");
         }
 
+        [HttpGet]
+        public IActionResult GetUsers()
+        {   
+            var result = _context.GetUsers();
+            return View(result);
+        }
 
-        public IActionResult Privacy()
+        [Route("BookingNotAllowed")]
+        public IActionResult BookingNotAllowed()
         {
             return View();
         }

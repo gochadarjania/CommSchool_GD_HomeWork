@@ -7,5 +7,6 @@ namespace Week_13.Services
     {
         public List<UserViewModel> GetUsers();
         public void AddUser(UserViewModel user);
+        public string ValidationTime(UserViewModel user);
     }
 }
