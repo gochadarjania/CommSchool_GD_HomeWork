@@ -1,7 +1,7 @@
 ----------------Students-------------
 
 --1. students which was born 1990
-SELECT *  FROM Students s where DoB > '1990' and DoB < '1991'
+SELECT *  FROM Students s where DoB > '1990'
 
 --2. print name lastname and age
 SELECT s.Firstname, s.Lastname , DATEDIFF(YY, DoB, GETDATE()) 
@@ -12,8 +12,9 @@ where Country = 'Georgia' or Country = 'Libya'
 INSERT INTO Students VALUES ('Sharp', 'Martina','1993-11-04','Integer.aliquam@acorciUt.edu', 9,	11,	30,	23,'British Indian Ocean Territory');
 
 --4. Top 5 students
-SELECT TOP 5 s.Firstname, s.MiddleTest
+SELECT TOP (5) WITH TIES s.Firstname, s.MiddleTest 
 FROM Students s 
+ORDER BY s.MiddleTest DESC
 
 --5. Delete studnets 19 score
 DELETE Students
