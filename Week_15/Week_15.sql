@@ -19,7 +19,7 @@ ORDER BY s.MiddleTest DESC
 --5. Delete studnets 19 score
 DELETE Students
 OUTPUT deleted.[Lastname], deleted.[Firstname]
-WHERE FinalTest = 19
+WHERE FinalTest = 21
 
 --6. Update students info
 update Students 
