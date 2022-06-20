@@ -16,7 +16,7 @@ namespace Week_17_Tests
         {
             _persons = new List<Person>()
             {
-                new Person{Id=3,FirstName = "TestName1", LastName = "TestLastName1", CreateDate = DateTime.Now, AddressId = 4, JobPosition = "Junior Developer", Salary = 500, WorkExperince = 1 },
+                new Person{ Id = 3,FirstName = "TestName1", LastName = "TestLastName1", CreateDate = DateTime.Now, AddressId = 4, JobPosition = "Junior Developer", Salary = 500, WorkExperince = 1 },
                 new Person{ Id = 4, FirstName = "TestName2", LastName = "TestLastName2", CreateDate = DateTime.Now, AddressId = 5, JobPosition = "Junior Developer", Salary = 500, WorkExperince = 1 },
                 new Person{ Id = 5, FirstName = "TestName3", LastName = "TestLastName3", CreateDate = DateTime.Now, AddressId = 3, JobPosition = "Junior Developer", Salary = 500, WorkExperince = 1 }
             };
@@ -39,7 +39,7 @@ namespace Week_17_Tests
                 }
                 persons.Add(item);
             }
-            
+
             return persons;
         }
 
@@ -52,7 +52,7 @@ namespace Week_17_Tests
 
         public async Task<Person> GetPersonById(int id)
         {
-            return _persons.Where(a => a.Id == id)                .FirstOrDefault();
+            return _persons.Where(a => a.Id == id).FirstOrDefault();
         }
 
         public async Task<List<Person>> GetPersonsByQuery(string query)

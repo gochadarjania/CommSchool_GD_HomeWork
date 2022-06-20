@@ -61,13 +61,13 @@ namespace Week_17.Service
             return persons;
         }
 
-        public async Task<List<Person>> UpdatePerson(Person person)
+        public async Task<Person> UpdatePerson(Person person)
         {
             _context.Persons.Update(person);
             _context.SaveChanges();
 
-            var personList = await _context.Persons.Select(x => x).ToListAsync();
-            return personList;
+            var personAdded = await GetPersonById(person.Id);
+            return personAdded;
         }
     }
 }

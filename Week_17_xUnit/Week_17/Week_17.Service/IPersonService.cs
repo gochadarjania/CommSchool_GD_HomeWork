@@ -14,6 +14,6 @@ namespace Week_17.Service
         Task<Person> GetPersonById(int id);//Get Person By Id From List
         Task<List<Person>> DeletePersonById(int id);//Delete Person By Id From List
         Task<List<Person>> GetPersonsByQuery(string query);//get list by city or countri
-        Task<List<Person>> UpdatePerson(Person person);//get list by city or countri
+        Task<Person> UpdatePerson(Person person);//get list by city or countri
     }
 }

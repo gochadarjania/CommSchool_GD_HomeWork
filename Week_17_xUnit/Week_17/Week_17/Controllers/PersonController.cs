@@ -11,8 +11,8 @@ using Week_17.Service;
 
 namespace Week_17.Controllers
 {
+    [Route("api/[controller]")]
     [ApiController]
-    [Route("[controller]")]
     public class PersonController : Controller
     {
         IPersonService _context;
@@ -41,23 +41,23 @@ namespace Week_17.Controllers
                 return BadRequest(errors);
             }
 
-            await _context.AddPerson(person);
+            var returnPerson = await _context.AddPerson(person);
 
-            return Ok(person);
+            return Ok(returnPerson);
         }
 
-        [HttpGet("GetPersons")]
+        [HttpGet]
         public async Task<ActionResult<Person>> GetPersons()
         {
             var personList = await _context.GetPersons();
             return Ok(personList);
         }
 
-        [HttpGet("GetPersonById")]
-        public async Task<ActionResult<Person>> GetPersonById(int id)
+        [HttpGet(nameof(GetPersonById))]
+        public async Task<Person> GetPersonById(int id)
         {
             var person = await _context.GetPersonById(id);
-            return Ok(person);
+            return person;
         }
 
         [HttpGet("GetPersonByQuery")]
@@ -75,11 +75,28 @@ namespace Week_17.Controllers
             return Ok(personList);
         }
 
-        [HttpPut("UpdatePersons")]
-        public async Task<ActionResult<Person>> UpdatePersons(Person person)
+        //[HttpPut("UpdatePersons")]
+        //public async Task<ActionResult<Person>> UpdatePersons(Person person)
+        //{
+        //    var personList = await _context.UpdatePerson(person);
+        //    return Ok(personList);
+        //}
+
+        public async Task<IActionResult> Update(int id)
         {
-            var personList = await _context.UpdatePerson(person);
-            return Ok(personList);
+            Person person = await _context.GetPersonById(id);
+            return View(person);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Update(Person person)
+        {
+            if (ModelState.IsValid)
+            {
+                await _context.UpdatePerson(person);
+                ViewBag.Result = "Success";
+            }
+            return View(person);
         }
     }
 }
